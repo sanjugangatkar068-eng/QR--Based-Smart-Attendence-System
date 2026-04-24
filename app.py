@@ -4,3 +4,5 @@ import os
 import uuid
 
 app = Flask(__name__)
+
+attendance = set() 
