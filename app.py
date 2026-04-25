@@ -6,3 +6,7 @@ import uuid
 app = Flask(__name__)
 
 attendance = set() 
+
+# Home Page
+@app.route('/')
+def home():
