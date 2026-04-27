@@ -10,3 +10,4 @@ attendance = set()
 # Home Page
 @app.route('/')
 def home():
+         return render_template('index.html')
