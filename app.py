@@ -11,3 +11,6 @@ attendance = set()
 @app.route('/')
 def home():
          return render_template('index.html')
+@app.route('/teacher')
+def teacher():
+    return render_template('teacher.html')
