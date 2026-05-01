@@ -14,3 +14,7 @@ def home():
 @app.route('/teacher')
 def teacher():
     return render_template('teacher.html')
+@app.route('/generate_qr')
+def generate_qr():
+    session_id = str(uuid.uuid4())
+
