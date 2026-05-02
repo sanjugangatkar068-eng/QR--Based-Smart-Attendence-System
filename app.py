@@ -18,3 +18,6 @@ def teacher():
 def generate_qr():
     session_id = str(uuid.uuid4())
 
+img = qrcode.make(session_id)
+    img.save("static/qr.png")
+
