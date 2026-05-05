@@ -21,3 +21,5 @@ def generate_qr():
 img = qrcode.make(session_id)
     img.save("static/qr.png")
 
+ return jsonify({"session_id": session_id})
+
