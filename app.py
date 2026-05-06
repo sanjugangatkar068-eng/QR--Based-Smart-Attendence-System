@@ -23,3 +23,7 @@ img = qrcode.make(session_id)
 
  return jsonify({"session_id": session_id})
 
+@app.route('/student')
+def student():
+    return render_template('student.html')
+
