@@ -27,3 +27,9 @@ img = qrcode.make(session_id)
 def student():
     return render_template('student.html')
 
+@app.route('/mark', methods=['POST'])
+def mark():
+    data = request.json
+    student_id = data.get("student_id")
+    session_id = data.get("session_id")
+
