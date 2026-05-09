@@ -33,3 +33,5 @@ def mark():
     student_id = data.get("student_id")
     session_id = data.get("session_id")
 
+attendance.add((student_id, session_id))
+
