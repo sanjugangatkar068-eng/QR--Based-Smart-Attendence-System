@@ -35,3 +35,6 @@ def mark():
 
 attendance.add((student_id, session_id))
 
+return jsonify({"message": "Attendance marked!"})
+
+
