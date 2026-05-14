@@ -37,4 +37,6 @@ attendance.add((student_id, session_id))
 
 return jsonify({"message": "Attendance marked!"})
 
+if __name__ == '__main__':
+    app.run(debug=True)
 
